@@ -1,0 +1,16 @@
+{
+  "name": "testing-iii",
+  "version": "1.0.0",
+  "description": "Testing development environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "danny",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "chai": "^5.2.0",
+    "cypress": "^14.0.3",
+    "mocha": "^11.1.0"
+  }
+}

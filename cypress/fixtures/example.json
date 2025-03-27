@@ -1,0 +1,27 @@
+{
+  "users": {
+    "wrongUser": "danny",
+    "validUser": "standard_user",
+    "blockedUser": "locked_out_user",
+    "problemUser": "problem_user",
+    "perfUser": "performance_glitch_user",
+    "errorUser": "error_user",
+    "visualUser": "visual_user"
+  },
+  "passwords": {
+    "pass": "secret_sauce",
+    "wrongPass": "heHasTestingMentality"
+  },
+  "site": {
+    "url": "https://www.saucedemo.com/",
+    "title": "Swag Labs",
+    "pages": {
+      "inventory": "inventory.html",
+      "product": "inventory.html?id=4",
+      "cart": "cart.html",
+      "checkout1": "checkout-step-one.html",
+      "checkout2": "checkout-step-two.html",
+      "checkout3": "checkout-complete.html"
+    }
+  }
+}
