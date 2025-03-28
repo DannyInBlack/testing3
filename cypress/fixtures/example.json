@@ -1,16 +1,16 @@
 {
   "users": {
-    "wrongUser": "danny",
-    "validUser": "standard_user",
-    "blockedUser": "locked_out_user",
-    "problemUser": "problem_user",
-    "perfUser": "performance_glitch_user",
-    "errorUser": "error_user",
-    "visualUser": "visual_user"
+    "wrong": "danny",
+    "valid": "standard_user",
+    "blocked": "locked_out_user",
+    "problem": "problem_user",
+    "performance": "performance_glitch_user",
+    "error": "error_user",
+    "visual": "visual_user"
   },
   "passwords": {
-    "pass": "secret_sauce",
-    "wrongPass": "heHasTestingMentality"
+    "correct": "secret_sauce",
+    "wrong": "heHasTestingMentality"
   },
   "site": {
     "url": "https://www.saucedemo.com/",
