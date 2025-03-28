@@ -1,3 +1,6 @@
+/// <reference types="Cypress" />
+/// <reference types="../support" />
+
 describe('Invalidated Access', () => {
   before(() => {
     cy.exampleFixture();
@@ -128,64 +131,26 @@ describe.only('Products Page', () => {
   });
 
   // Menu, close menu icon is slightly tilted
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
+  it('[2] Menu icons have correct rotation', () => {
+    cy.get('[data-test=open-menu]').should('not.have.class', 'visual_failure');
+    cy.get('#react-burger-menu-icon').click();
+    cy.get('[data-test=close-menu]').should('not.have.class', 'visual_failure');
   });
 
   // Cart icon appeasr on top of the filter icon
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
+  it('[3] Cart icon in correct position', () => {
+    cy.get('#shopping_cart_container').should('not.have.class', 'visual_failure');
   });
   
   // Bottom right add to cart button is shifted to the right
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
+  it('[4] Product has correct image', () => {
+    cy.get('.btn_inventory')
+      .each(button => {
+        expect(button).to.not.have.class('btn_inventory_misaligned')
+      })
   });
   
-  // Middle row product names are shifted to the right
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
-  });
-  
-  // Prices are randomly generated on each reload/navigation
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
-  });
-  
-  // Cannot add any products
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
-  });
-  
-  // Cannot click twice to add and remove items from cart
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
-  });
-  
-  // Cannot change sorting method 
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
-  });
-  
-  // Trying to sort will not work, causing an alert to pop up
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
-  });
-  
-  // Cannot go to cart page
-  it('[1] Product has correct image', () => {
-    cy.get('[data-test=inventory-item-sauce-labs-backpack-img]')
-      .should('have.attr', 'src', '/static/media/sauce-backpack-1200x1500.0a0b85a3.jpg');
-  });
+  // // Middle row prodj
   
 });
 
