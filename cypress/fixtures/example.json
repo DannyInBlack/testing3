@@ -9,7 +9,7 @@
     "visual": "visual_user"
   },
   "passwords": {
-    "correct": "secret_sauce",
+    "valid": "secret_sauce",
     "wrong": "heHasTestingMentality"
   },
   "site": {
@@ -17,7 +17,7 @@
     "title": "Swag Labs",
     "pages": {
       "inventory": "inventory.html",
-      "product": "inventory.html?id=4",
+      "product": "inventory-item.html?id=4",
       "cart": "cart.html",
       "checkout1": "checkout-step-one.html",
       "checkout2": "checkout-step-two.html",
