@@ -1,3 +1,4 @@
+/// @ts-ignore
 /// <reference types="Cypress" />
 /// <reference types="../support" />
 
